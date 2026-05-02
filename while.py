@@ -26,7 +26,10 @@ while True:
 
 if contador > 0 :
     promedio = suma/contador
+    print(promedio)
+else:
+    print("No se puede dividir por 0.")
 
 print(suma)
 print(contador)
-print(promedio)
+
