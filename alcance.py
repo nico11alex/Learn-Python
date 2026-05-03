@@ -38,14 +38,13 @@ def formatear_moneda(cantidad, simbolo="$", pais="Desconocido"):
 
 numero = float(input("Ingrese el monto: "))
 simbolo = str(input("Ingrese el símbolo (por defecto $): "))
-
-if simbolo == "":
-    simbolo = "$"
-
 pais = str(input("Ingrese el país (por defecto Desconocido): "))
 
-if pais == "":
-    pais = "Desonocido"
-
-
-print(f"Resultado: {formatear_moneda(numero,simbolo,pais)}")
+if simbolo == "" and pais == "":
+    print(f"Resultado: {formatear_moneda(numero)}")
+elif simbolo == "":
+    print(f"Resultado: {formatear_moneda(numero,pais=pais)}")
+elif pais == "":
+    print(f"Resultado: {formatear_moneda(numero,simbolo=simbolo)}")    
+else:
+    print(f"Resultado: {formatear_moneda(numero,simbolo,pais)}")
