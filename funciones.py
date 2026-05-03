@@ -24,13 +24,14 @@ h = float(input("Altura: "))
 a = area_triangulo(b,h)
 print("El área es",a)
 
+#ACTIVIDAD
+
 def es_par(numero):
-    if numero % 2 == 0:
-        return True
-    else:
-        return False
+    return numero % 2 == 0
     
 def calcular_media(lista_numeros):
+    if len(lista_numeros) == 0:
+        return 0
     suma = sum(lista_numeros)
     longitud = len(lista_numeros)
     return suma / longitud
