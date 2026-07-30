@@ -12,3 +12,6 @@ print(f"Hello, {name}")
 
 message = f"{name} es una gran persona, el mundo sera 'pequeño'"
 print(message)
+
+fileName = "exercise1.py"
+print(fileName.removesuffix(".py"))
