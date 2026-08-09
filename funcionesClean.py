@@ -4,6 +4,7 @@ def total_producto(precio,cantidad):
 def datos_validos(precio,cantidad):
     return precio > 0 and cantidad > 0
 
+# intenta ingresar productos si ingresa un tipo de dato incorrecto lo atrapa
 try:
     producto = input("Producto: ")
     precio = float(input("Precio: "))
