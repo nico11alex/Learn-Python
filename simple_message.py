@@ -1,4 +1,5 @@
-message = "I love you"
+message = 'sa mi nombre es "cdscds'
+print(message)
 print(message)
 
 message= "I hate you"
